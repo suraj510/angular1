@@ -1,0 +1,59 @@
+<!-- The content below is only a placeholder and can be replaced.
+<div>
+<div style="text-align:center" class="background">
+  <h2 style="color: rgb(245, 105, 35)">
+     <app-about></app-about>
+    </h2> 
+  </div>
+     <div class="formborder">
+       <div style="text-align: center">
+          <h1>{{ title }} {{about}}</h1>
+              <b>Name&nbsp;&nbsp;:&nbsp;</b> 
+                  <input type="text" name="fname" class="textbox"  placeholder="first name">
+         </div><br>
+       <div style="text-align: center">
+                    <b>Email&nbsp;&nbsp;:&nbsp;</b>
+                    <input type="text" name="email" class="textbox" placeholder="Email id">
+          </div> <br>
+       <div style="text-align: center">
+                    <b>Mobile&nbsp;&nbsp;:</b>
+                      <input type="text" name="mobile" class="textbox" placeholder="mobile">
+          </div><br>
+       <div style="text-align: center">
+                    <b>Course&nbsp;:</b>
+                    <input type="text" name="Course" class="textbox" placeholder="Course">
+          </div><br>
+       <div style="text-align: center">
+                    <b>Address:</b>
+                    <input type="text" name="address" class="textbox" placeholder="Address">
+           </div><br>
+       <div style="text-align: center">
+         <button (click)="toggle()" type="submit" name="submit" class="button">Submit</button>
+                  </div>   <br>      
+                 
+                  <div [hidden]="showElement">
+                      succesfully
+                  </div>
+                  
+                </div><br>
+     <div>
+       <h1>ng for example</h1>
+       <ul>
+         <li *ngFor="let name1 of names">
+           {{name1.name}} - {{name1.city}}
+         </li>
+       </ul>
+     </div>
+     <h1>ngswich</h1>
+     <div [ngSwitch]="position">
+        <h2 *ngSwitchCase="'first'">First</h2>
+        <h2 *ngSwitchCase="'second'">Second</h2>
+        <h2 *ngSwitchCase="'third'">Third</h2>
+      </div>
+    </div>
+   -->
+   <div>
+   <a routerLink="aboutnew">about</a><br>
+   <a routerLink="home">home</a>
+  </div>
+  <router-outlet></router-outlet>
